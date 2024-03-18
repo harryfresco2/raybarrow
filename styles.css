@@ -87,7 +87,7 @@ display: none;
 }
 @media screen and (max-width:986px) {
   .bookTitle{
-    font-size: 60px;
+    font-size: 20px;
   }
   .bookCover{
     width: 100%;
