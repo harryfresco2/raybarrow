@@ -64,8 +64,8 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="col-lg-4" style="text-align: center">
-                <img class="bookCover" src="img/photo.jpeg">
+            <div class="col-lg-4" id="bookCover" style="text-align: center">
+                
             </div>
             <div class="col-lg-4 quote1" style="text-align: center">
                 <div class="row">
@@ -167,7 +167,27 @@
 
     </div>
     </div>
-
+    <script>
+        const paths = 
+        
+        [
+            "<img class='bookCover' src='img/cover1.webp'>",
+            "<img class='bookCover' src='img/cover2.webp'>",
+            "<img class='bookCover' src='img/cover3.webp'>",
+            "<img src='img/cover1bookv3.png' style='width:90%'>"
+        ]
+    
+    
+        function displayRandomMessage() {
+            var list = paths
+            var randomIndex = Math.floor(Math.random() * list.length);
+            var randomMessage = list[randomIndex];
+            var messageElement = document.getElementById("bookCover");
+            messageElement.innerHTML = randomMessage;
+        }
+    
+        displayRandomMessage()
+    </script>
 </body>
 
 </html>
