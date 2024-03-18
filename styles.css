@@ -34,23 +34,42 @@ font-style: normal;
 font-size: 22px;
 letter-spacing: 2px;
 text-transform: uppercase;
-
 }
-
+.quoteMobile{
+  font-family: futura-pt;
+font-weight: 400;
+font-style: normal;
+font-size: 22px;
+letter-spacing: 2px;
+text-transform: uppercase;
+visibility: hidden;
+display: none;
+}
 .quoteName{
   font-style: italic;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:986px) {
 .bookCover{
   width: 100%;
   padding-bottom: 40px;
 }
 .centreClass{
   position: absolute;
-  top:0%;
-  left:0%;
-  margin-right:0%;
-  transform: translate(0%, 0%);
+  top:0;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%, 0%);
+}
+.quote1{
+  visibility: hidden;
+  display: none;
+}
+.quoteMobile{
+  visibility:visible;
+  display: block;
+}
+.container{
+  width:100%;
 }
 }
 
