@@ -1,6 +1,24 @@
 body{
   background-color: #f7f1de;
 }
+
+h2{
+  font-family: futura-pt;
+}
+p1 {
+  font-family: futura-pt;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+p2 {
+  font-family: futura-pt;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
 .centreText{
     position: absolute;
     left:50%;
@@ -48,29 +66,55 @@ display: none;
 .quoteName{
   font-style: italic;
 }
+.chapter{
+  background-color: white;
+  margin-top: 60px;
+  width: 50%;
+}
+.index{
+  background-color: white;
+
+  width: 50%;
+  padding: 30px;
+  
+}
+.indexLink{
+  text-decoration: none;
+  color:black
+}
+.index:hover{
+  background-color: rgb(242, 242, 242);
+}
 @media screen and (max-width:986px) {
-.bookCover{
-  width: 100%;
-  padding-bottom: 40px;
-}
-.centreClass{
-  position: absolute;
-  top:0;
-  left:50%;
-  margin-right:-50%;
-  transform: translate(-50%, 0%);
-}
-.quote1{
-  visibility: hidden;
-  display: none;
-}
-.quoteMobile{
-  visibility:visible;
-  display: block;
-}
-.container{
-  width:100%;
-}
+  .bookCover{
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .centreClass{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, 0%);
+  }
+  .quote1{
+    visibility: hidden;
+    display: none;
+  }
+  .quoteMobile{
+    visibility:visible;
+    display: block;
+  }
+  .container{
+    width:100%;
+  }
+  .chapter{
+    width:100%;
+    margin-top:0;
+  }
+  .index{
+    width: 100%;;
+  }
 }
 
 .newButton{
@@ -155,5 +199,4 @@ border-color: #272727;
 .button-17:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
-
 
