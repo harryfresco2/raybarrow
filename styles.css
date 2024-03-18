@@ -301,3 +301,25 @@ p{
 .aboutText:hover{
     color:rgb(211, 211, 211);
 }
+
+.bookCover{
+  width:50%;
+}
+
+@media screen and (max-width:500px) {
+  .bookCover{
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .centreClass{
+    position: fixed;
+    top:0%;
+    left:0%;
+    margin-right:0%;
+    transform: translate(0%, 0%);
+  }
+}
+
+@media screen and (max-width:960px) {
+  /* bigger screens */
+}

@@ -10,19 +10,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="../js/script.js"></script>
     <title>Ray Barrow</title>
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 
 </head>
 
 <body>
-<!-- meta, image compression (webp) -->
-<!--     <div id="nav-placeholder">
+    <!-- meta, image compression (webp) -->
+    <!--     <div id="nav-placeholder">
 
     </div>
       
@@ -31,34 +31,19 @@
         $("#nav-placeholder").load("navbar.html");
      
     </script> -->
-    <script>
-        function changeImageOpacity(opacity) {
-            const image = document.querySelector('.backgroundImage');
-            image.style.opacity = opacity;
-        }
-/* - removed scroll effect
-        let x = 0;
-        window.addEventListener('scroll', (event) => {
-            x += 1;
-            console.log(x);
-            changeImageOpacity(x/1000);
-            if(x>= 9){
-                window.location.replace("../html/may23.html");
-            }
-        });
-*/
-    </script>
-    <div class="container centreClass">
 
     <img src="../img/test.jpg" class="backgroundImage" alt="Ray Barrow image">
+    <div class="container centreClass" style="padding: 30px;">
+
+
 
         <div class="row">
-            <div class="col-6" style="text-align: center">
+            <div class="col-md-6" style="text-align: center">
                 <a href="">
-                <img src="/img/photo.jpeg" width="50%">
+                    <img class="bookCover" src="/img/photo.jpeg">
                 </a>
             </div>
-            <div class="col-6" style="text-align: center">
+            <div class="col-md-6" style="text-align: center">
                 <div class="row">
                     <h1>Book Title</h1>
                     <p1>this is the book descjsdfjsd vjlksdf vksjd vksjdvn skjvn lksj<br>
@@ -69,40 +54,88 @@
                         this is the book descjsdfjsd vjlksdf vksjd vksjdvn skjvn lksj<br></p1>
                 </div><br>
                 <div class="container">
-                <div class="row">
-                    <div class="col-6"style="text-align: center">
-                        <a href="" > 
-                            <button class="button-17">Read Online</button>
-                        </a>
+                    <div class="row">
+                        <div class="col-6" style="text-align: center">
 
+                            <!-- Button trigger modal -->
+                            <button type="button" class="button-17" data-bs-toggle="modal"
+                                data-bs-target="#readPrompt">
+                                Read Online
+                            </button>
+
+                        </div>
+                        <div class="col-6" style="text-align: center">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="button-17" data-bs-toggle="modal" data-bs-target="#downloadPrompt">
+                                Download
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-6"style="text-align: center">
-                        <a href="" download="">
-                            <button class="button-17">Download</button>
-                        </a>
-                    </div>
-                    </div> 
                 </div>
-                    
+
                 </p1>
             </div>
         </div>
-<br>
-        <div class="row">
-            <div class="col-12" style="text-align: center">
-                <a href="https://www.alzheimers.org.uk/get-involved/donate">
-                    <button class="button-17" id="musicText">Donate</button>
-                </a>
-                
-            </div>
-        </div>
-      
+        <br>
+
+
+
 
     </div>
 
 
+<!--     <div class="footerCentre">
+        <div class="row">
+            <div class="col-12" style="text-align: center">
+                <a style="text-decoration: none;" href="https://www.alzheimers.org.uk/get-involved/donate">
+                    <button class="button-17" id="musicText">Donate</button>
+                </a>
 
+            </div>
+        </div>
+    </div> -->
+    <!-- Modal Read -->
+    <div class="modal fade" id="readPrompt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="readModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <a href="">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Read anyway</button></a>
+                    <a style="text-decoration: none;" href="https://www.alzheimers.org.uk/get-involved/donate"target="_blank">
+                    <button type="button" class="btn btn-primary">Donate</button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal Download-->
+    <div class="modal fade" id="downloadPrompt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Download anyway"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <a href="">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Download anyway</button></a>
+                    <a style="text-decoration: none;" href="https://www.alzheimers.org.uk/get-involved/donate"target="_blank">
+                    <button type="button" class="btn btn-primary">Donate</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
