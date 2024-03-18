@@ -12,7 +12,7 @@ body{
 h2{
   font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
 }
-p1 {
+p {
   font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -71,6 +71,7 @@ visibility: hidden;
 display: none;
 }
 .quoteName{
+  font-size: 16px;
   font-style: italic;
 }
 .chapter{
