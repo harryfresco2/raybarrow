@@ -1,19 +1,26 @@
+@font-face {
+  font-family: 'Futura PT Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura PT Medium'), url('fonts/futura-pt-cufonfonts-webfont/FuturaCyrillicMedium.woff') format('woff');
+  }
+  
 body{
   background-color: #f7f1de;
 }
 
 h2{
-  font-family: futura-pt,"Trebuchet MS", Arial, sans-serif;
+  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
 }
 p1 {
-  font-family: futura-pt,"Trebuchet MS", Arial, sans-serif;
+  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
   letter-spacing: 2px;
 }
 p2 {
-  font-family: futura-pt,"Trebuchet MS", Arial, sans-serif;
+  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -40,13 +47,13 @@ width:60%;
   font-weight: 500;
 font-style: normal;
 font-size: 79px;
-font-family: futura,"Trebuchet MS", Arial, sans-serif;
+font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
 
 
 }
 
 .quote{
-  font-family: futura-pt,"Trebuchet MS", Arial, sans-serif;
+  font-family:'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
 font-weight: 400;
 font-style: normal;
 font-size: 22px;
@@ -54,7 +61,7 @@ letter-spacing: 2px;
 text-transform: uppercase;
 }
 .quoteMobile{
-  font-family: futura-pt,"Trebuchet MS", Arial, sans-serif;
+  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
 font-weight: 400;
 font-style: normal;
 font-size: 22px;
