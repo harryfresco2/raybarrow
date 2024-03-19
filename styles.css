@@ -41,6 +41,8 @@ p2 {
 }
 .bookCover{
 width:60%;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
 .bookTitle{
@@ -141,6 +143,21 @@ color: #fff;
 background-color: #272727;
 border-color: #272727;
 }
+
+.newButtonDisabled{
+  padding: 21px 34px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 15px;
+font-weight: 600;
+font-style: normal;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #e2e2e2;
+background-color: #c5c5c5;
+border-color: #c5c5c5;
+}
+
 /* CSS */
 .button-17 {
   align-items: center;
